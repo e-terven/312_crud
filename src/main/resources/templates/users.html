@@ -38,7 +38,7 @@
   <tr th:each="user : ${users}">
 
     <td>
-      <a th:href="@{/{id}(id=${user.getId()})}" th:text="${user.getId()}">
+      <a th:href="@{'/{id}(id=${user.getId()})'}" th:text="${user.getId()}">
         <span th:text="${user.getId()}"></span>
       </a>
     </td>
